@@ -553,7 +553,7 @@ button {
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff8c05;
     color: white;
     border: none;
     border-radius: 5px;
@@ -574,7 +574,7 @@ button {
 }
 
 .chat-header {
-    background-color: #007bff;
+    background-color: #ff8c05;
     color: white;
     padding: 10px;
     border-top-left-radius: 10px;
@@ -668,77 +668,20 @@ ul li a {
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-/* General Skill Section Styling */
-.skill-title span {
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-}
-
-/* Progress Bar for Personal Skills */
-.personalSkill .progress {
-    background: #444; /* Darker background for contrast */
-    border-radius: 5px;
-    height: 8px;
-}
-
-.personalSkill .progress-bar {
-    background: #ff8c05; /* Orange for personal skills */
-    transition: width 0.6s ease-in-out;
-}
-
-.personalSkill .progress-bar:hover {
-    box-shadow: 0 0 10px rgba(255, 140, 5, 0.8); /* Glowing effect */
-}
-
-/* Progress Bar for Technical Skills */
-.pro-skill .progress {
-    background: #333; /* Darker background */
-    border-radius: 5px;
-    height: 8px;
-}
-
-.pro-skill .progress-bar {
-    background: #007bff; /* Blue for technical skills */
-    transition: width 0.6s ease-in-out;
-}
-
-.pro-skill .progress-bar:hover {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Glowing effect */
-}
 .progress-bar {
     transition: width 2s ease;
 }
-<style>
-    /* Styling the button */
-    .view-certificates-btn {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #4CAF50; /* Green background */
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 20px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
 
-    /* Button hover effects */
-    .view-certificates-btn:hover {
-        background-color: #45a049; /* Darker green */
-        transform: scale(1.05);
-    }
+.view-certificates-btn {
+    background-color: #ff8c05; /* Matches your theme gradient*/
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding for top/bottom and left/right */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
 
-    /* Optional: If you want to style the content area to look cleaner */
-    .content {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-    }
-
-    /* Optional: Add a little space between paragraphs */
-    .content p {
-        margin-bottom: 15px;
-    }
-</style>
+.view-certificates-btn:hover {
+    background-color: #ff8c05; /* Darker green on hov
