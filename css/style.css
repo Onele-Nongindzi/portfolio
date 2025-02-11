@@ -250,7 +250,7 @@ ul {
     transition: all .2s ease;
 }
 .contact .content-left ul li:hover a i {
-    color: #525252;
+    color: #ffffff;
 }
 .contact .content-left ul li:last-child {
     margin-right: 0;
@@ -263,7 +263,7 @@ ul {
 }
 .contact .content-right .row .form-control {
     border: 0;
-    border-bottom: 1px solid #525252;
+    border-bottom: 1px solid #ffffff;
     border-radius: 0;
     background: transparent;
     padding: 0;
@@ -422,7 +422,7 @@ button:active {
 
 /* User messages */
 .user-message {
-    background-color: #007bff;
+    background-color: hsl(29, 100%, 50%);
     color: white;
     padding: 8px;
     border-radius: 5px;
@@ -503,9 +503,10 @@ ul li a {
     transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
-.view-certificates-btn:hover {
-    background-color: #ff8a05b6;
- } 
+.button:hover {
+    background: linear-gradient(to right, #ff8c05, #d61a5e);
+    transform: scale(1.05);
+}
  /* For Soft Skills Text */
 .no-progress-bar {
     font-style: italic;
@@ -693,4 +694,17 @@ ul li a[href*="mailto"]:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow to give a pressed effect */
     opacity: 0.8; /* Slight fade effect */
 }
+.navbar-nav .nav-link {
+    font-weight: bold; /* Makes the font bold */
+    font-size: 16px; /* Adjust size if needed */
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    color: white; /* Adjust color as needed */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #ff8c05; /* Change color on hover */
+}
+
 
