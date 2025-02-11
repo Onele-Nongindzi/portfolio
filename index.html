@@ -103,43 +103,6 @@
     </div>
 </div>
         <!-- end home intro -->
-         <!-- skills-->
-<div id="skills" class="skills segments">
-    <div class="container">
-        <div class="box-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h3>Skills</h3>
-                    </div>
-                    <div class="content">
-                        <ul class="skill-list">
-                            <li>
-                                <strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js, Bootstrap
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 60%;">70%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <strong>Backend Development:</strong> Node.js, Express.js, MongoDB
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;">70%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <strong>Others:</strong> Problem-Solving, Collaboration, Agile Development
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 60%;">60%</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Skills -->
 <!-- About -->
 <div id="about" class="about segments">
     <div class="container">
@@ -233,23 +196,25 @@
 </head>
 <body>
 
-    <!-- Chatbox Button -->
-    <button id="chat-button" onclick="toggleChat()">Chat</button>
+ <!-- Chatbox Button -->
+<button id="chat-button" onclick="toggleChat()">Chat</button>
 
-    <!-- Chatbox -->
-    <div id="chatbox" class="chatbox">
-        <div class="chat-header">
-            <span>Chat with me!</span>
-            <button class="close-btn" onclick="toggleChat()">X</button>
-        </div>
-        <div class="chat-messages" id="chat-messages">
-            <!-- Chat messages will appear here -->
-        </div>
-        <input type="text" id="chat-input" class="chat-input" placeholder="Type your message...">
-        <button onclick="sendMessage()">Send</button>
+<!-- Chatbox -->
+<div id="chatbox" class="chatbox">
+    <div class="chat-header">
+        <span>Chat with me!</span>
+        <button class="close-btn" onclick="toggleChat()">X</button>
     </div>
+    <div class="chat-messages" id="chat-messages">
+        <!-- Chat messages will appear here -->
+    </div>
+    <input type="text" id="chat-input" class="chat-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
 
-    <script src="script.js"></script>
+<!-- Link External JavaScript -->
+<script src="script.js"></script>
+
 </body>
 </html>
     <script src="js/jquery.min.js"></script>

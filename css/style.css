@@ -235,130 +235,6 @@ ul {
     border-radius: 0 10px 10px 0;  /* Slightly more rounded corners */
 }
 
-/*resume*/
-.resume .timeline {
-    position: relative;
-    list-style-type: none;
-}
-.resume .timeline::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-    background: #fff;
-}
-.resume .timeline ul {
-    list-style-type: none;
-}
-.resume .timeline ul li {
-    margin-bottom: 20px;
-}
-.resume .timeline > li {
-    margin-bottom: 30px;
-    padding-left: 30px;
-}
-.resume .timeline > li:last-child {
-    margin-bottom: 0;
-}
-.resume .timeline > li::before {
-    content: '';
-    background: #fff;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    left: -7px;
-    width: 16px;
-    height: 16px;
-    z-index: 400;
-}
-.resume .timeline > li h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-.resume .my-skill .content-right .card {
-    background: transparent;
-    border: 0;
-}
-.resume .my-skill .content-right .card .card-header {
-    background: transparent;
-    border: 0;
-    padding: 0;
-}
-.resume .my-skill .content-right .card .card-header h2 .btn {
-    padding: 0;
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-}
-.resume .my-skill .content-right .card .card-header h2 .btn:hover {
-    text-decoration: none;
-}
-.resume .my-skill .content-right .card .card-header h2 .btn:focus {
-    text-decoration: none;
-}
-.resume .my-skill .content-right .card .card-header h2 .btn i {
-    color: #fff;
-    margin-right: 15px;
-    font-size: 16px;
-    position: relative;
-    top: -2px;
-}
-.resume .my-skill .content-right .card .card-body {
-    padding-left: 32px;
-}
-.resume .my-skill .content-right .card .card-body ul li {
-    margin-bottom: 20px;
-}
-.resume .my-skill .content-right .card .card-body ul li:last-child {
-    margin-bottom: 0;
-}
-.resume .my-skill .content-right .skill-title span {
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-.resume .my-skill .content-right .progress {
-    height: 5px;
-    border-radius: 0;
-    background: #414141;
-}
-.resume .my-skill .content-right .progress .progress-bar {
-    background: #d61a5e;
-    background: -moz-linear-gradient(left, #d61a5e 0%, #ff8c05 100%);
-    background: -webkit-linear-gradient(left, #d61a5e 0%, #ff8c05 100%);
-    background: linear-gradient(to right, #d61a5e 0%, #ff8c05 100%);
-}
-.resume .owl-theme .owl-dots .owl-dot span {
-    margin: 5px 10px;
-    background: #515151;
-}
-.resume .owl-theme .owl-dots .owl-dot.active span {
-    background: #ff8c05;
-}
-.resume .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 50px;
-}
-
-@keyframes titles {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-101%);
-    }
-}
-@keyframes subtitles {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-101%);
-    }
-}
 /*contact*/
 .contact .content-left h2 {
     font-size: 50px;
@@ -479,25 +355,6 @@ ul {
     .about .content-right {
         display: none;
     }
-
-    .resume .timeline::before {
-        position: absolute;
-        left: 7px;
-    }
-    .resume .timeline li::before {
-        position: absolute;
-        left: 0;
-    }
-    .resume .content-left {
-        margin-bottom: 30px;
-    }
-    .blog .content {
-        margin-bottom: 30px;
-    }
-    .blog .content.no-mb {
-        margin-bottom: 0;
-    }
-
     .contact .content-left {
         margin-bottom: 30px;
     }
@@ -559,67 +416,30 @@ button {
     border-radius: 5px;
     font-size: 16px;
 }
-
-/* Chatbox Styles */
-.chatbox {
-    display: none; /* Hidden by default */
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.chat-header {
-    background-color: #ff8c05;
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.chat-messages {
-    padding: 10px;
-    height: 200px;
-    overflow-y: auto;
-}
-
-.chat-input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-}
-
 button:active {
     transform: scale(0.98);
 }
 
-/* Message Styles */
-.message {
-    margin: 10px 0;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.user {
+/* User messages */
+.user-message {
     background-color: #007bff;
     color: white;
-    align-self: flex-end;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: right;
 }
 
-.bot {
+/* Bot messages */
+.bot-message {
     background-color: #f1f1f1;
-    color: #333;
-    align-self: flex-start;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: left;
 }
+
 
 /* Social Media Links */
 ul {
@@ -673,7 +493,7 @@ ul li a {
 }
 
 .view-certificates-btn {
-    background-color: #ff8c05; /* Matches your theme gradient*/
+    background: linear-gradient(to right, #d61a5e, #ff8c05);
     color: white; /* White text */
     font-size: 16px; /* Font size */
     padding: 10px 20px; /* Padding for top/bottom and left/right */
@@ -684,5 +504,193 @@ ul li a {
 }
 
 .view-certificates-btn:hover {
-    background-color: #ff8c05;
+    background-color: #ff8a05b6;
  } 
+ /* For Soft Skills Text */
+.no-progress-bar {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Adjusting the overall font size and layout */
+.skill-list i {
+    color: #007bff; /* Adjust the color */
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+/* Progress bar container */
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+}
+
+/* Progress bar itself */
+.progress-bar {
+    background-color: #ff8c05;  /* Set the desired progress bar color */
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 10px;  /* Vertically align the percentage text */
+    font-size: 0.9em;  /* Adjust font size inside the progress bar */
+    border-radius: 20px;
+}
+
+/* LinkedIn and Phone Number - Custom Styling */
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Change link color */
+    font-weight: 600; /* Make the link bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover Effect */
+ul li a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Add Icons next to LinkedIn and Phone Number */
+ul li a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em; /* Increase icon size */
+}
+
+/* Optional: Style for Phone Number Links (e.g., Tel Links) */
+/* Phone Number - Custom Styling */
+ul li a.phone-number {
+    color: white; /* Make phone number text white */
+    font-weight: 600; /* Make the text bold */
+    font-size: 0.9em; /* Make the font smaller */
+    white-space: nowrap; /* Prevent the number from breaking into multiple lines */
+}
+
+ul li a.phone-number:hover {
+    color: #882177f3; /* Dark green on hover */
+}
+
+/* Styling for Social Media Links */
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default text color */
+    font-size: 1.1em; /* Adjust text size */
+    font-weight: 600; /* Make the link bold */
+    display: flex; /* Align text and icon horizontally */
+    align-items: center; /* Vertically align icon and text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Icon Styling */
+ul li a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.3em; /* Increase icon size */
+}
+
+/* Hover Effects */
+ul li a:hover {
+    color: #007bff; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Facebook Icon Hover Color */
+ul li a[href*="facebook.com"]:hover {
+    color: #3b5998; /* Facebook blue */
+}
+
+/* Google Icon Hover Color */
+ul li a[href*="mailto"]:hover {
+    color: #db4437; /* Google red */
+}
+/* Chatbox styles */
+.chatbox {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+/* Chatbox header */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #d61a5e, #ff8c05);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Chat messages container */
+.chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Chat input */
+.chat-input {
+    width: calc(100% - 60px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Chatbox button */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #d61a5e, #ff8c05);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Close button */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Style for the send button */
+.chatbox button {
+    background: linear-gradient(to right, #d61a5e, #ff8c05); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Adjust padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Decreased font size */
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect */
+.chatbox button:hover {
+    background: linear-gradient(to right, #ff8c05, #d61a5e); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Active (when clicked) */
+.chatbox button:active {
+    transform: scale(0.95); /* Slightly shrink button when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow to give a pressed effect */
+    opacity: 0.8; /* Slight fade effect */
+}
+
