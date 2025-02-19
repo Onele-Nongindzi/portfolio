@@ -205,7 +205,6 @@
         </div>
     </div>
 </section>
-
 <!-- Contact Section -->
 <section id="contact" class="contact-segment segments">
     <div class="container">
@@ -217,25 +216,37 @@
                             <h3>Get In Touch</h3>
                         </div>
                         <form action="https://formspree.io/f/myzklwvn" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>
+                                        Full Name:
+                                        <input type="text" name="name" placeholder="Full Name" required>
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Email Address:
+                                        <input type="email" name="email" placeholder="Email Address" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>
+                                        Mobile No:
+                                        <input type="tel" name="mobnum" placeholder="Mobile Number" required>
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Email Subject:
+                                        <input type="text" name="subject" placeholder="Email Subject" required>
+                                    </label>
+                                </div>
+                            </div>
                             <label>
-                                Full Name:
-                                <input type="text" name="name" placeholder="Full Name" required>
-                            </label>
-                            <label>
-                                Email Address:
-                                <input type="email" name="email" placeholder="Email Address" required>
-                            </label>
-                            <label>
-                                Mobile Number:
-                                <input type="tel" name="mobnum" placeholder="Mobile Number" required>
-                            </label>
-                            <label>
-                                Email Subject:
-                                <input type="text" name="subject" placeholder="Email Subject" required>
-                            </label>
-                            <label>
-                                Your Message:
-                                <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
+                                        Please Type Your Message Here:
+                                <textarea name="message" rows="1" placeholder="Your Message" required></textarea>
                             </label>
                             <button type="submit">Submit</button>
                         </form>
@@ -245,6 +256,8 @@
         </div>
     </div>
 </section>
+
+
 
 </section>
     <!-- Social Icons Below Form -->

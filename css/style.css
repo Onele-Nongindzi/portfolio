@@ -27,36 +27,32 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    line-height: 110%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: #fff;
-}
-
+h6,
 h1 {
     font-size: 48px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 40px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 40px;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 40px;
+	margin: auto
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 40px;
+	margin: auto
+	
 }
 
 a {
@@ -231,9 +227,10 @@ ul {
     background: url(../images/about.jpg);
     background-size: cover;
     background-position: center center;  /* Focuses on the center of the image */
-    min-height: 70vh;  /* Reduced to 50% of the viewport height */
+    min-height: 55vh;  /* Reduced to 50% of the viewport height */
     border-radius: 0 10px 10px 0;  /* Slightly more rounded corners */
 }
+
 
 /*contact*/
 .contact .content-left h2 {
@@ -500,12 +497,13 @@ ul li a {
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    transition: 0.3s ease-in-out; /* Smooth transition */
 }
 
 .button:hover {
-    background: linear-gradient(to right, #ff8c05, #d61a5e);
-    transform: scale(1.05);
+    background: linear-gradient(to right, #ff8c05, #d61a5e); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
  /* For Soft Skills Text */
 .no-progress-bar {
@@ -606,7 +604,7 @@ ul li a[href*="facebook.com"]:hover {
 
 /* Google Icon Hover Color */
 ul li a[href*="mailto"]:hover {
-    color: #db4437; /* Google red */
+    color: #dbc237; /* Google red */
 }
 /* Chatbox styles */
 .chatbox {
@@ -724,5 +722,205 @@ ul li a[href*="mailto"]:hover {
     transform: scale(1.05); /* Slightly increase size */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
+/* Skills Section */
+.skills {
+    text-align: right; /* Aligns the h5 title to the right */
+    padding: 5rem 9%; /* Adjust padding for spacing */
+    background: #212121;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center the icons vertically */
+    align-items: center; /* Center the content horizontally */
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+	/*height: 100px;*/
+    margin-top: 300px;
+}
+ 
+.skills h5 {
+    font-size: 5rem;
+    margin-bottom: 3rem; /* Space between title and icons */
+    color: linear-gradient(to right, #d61a5e, #ff8c05)
+    text-align: center; /* Title is centered */
+}
+ 
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items in the center vertically */
+    flex-wrap: wrap; /* Allows icons to wrap if space is too tight */
+    gap: 3rem; /* Increased gap for more spacing between icons */
+}
+ 
+.skills-icons i {
+    font-size: 5rem 9%; /* Increased icon size */
+    color: var(--main-color); /* Main color remains consistent */
+    background: #212121;    /* Darker background for icons */
+    padding: 2.5rem; /* Increased padding for larger icons */
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+ 
+.skills-icons i:hover {
+    color: #fff;
+    background: var(--main-color); /* Maintained hover effect */
+	@media (max-width: 768px) {
+    .skills h5 {
+        text-align: center; /* Center the title on smaller screens */
+    }
 
+    .skill-item {
+        width: 80px; /* Reduce the size of the skill items for smaller screens */
+    }
 
+    .skill-item i {
+        font-size: 30px; /* Adjust icon size for smaller screens */
+    }
+@media screen and (max-width: 768px) {
+    .contact form {
+        padding: 1.5rem; /* Add some padding to the form container */
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0.7rem 0; /* Ensures proper spacing */
+    }
+
+    .contact form .input-box {
+        flex-direction: column; /* Stack the input fields vertically */
+        gap: 1rem; /* Add some gap between stacked fields */
+    }
+
+    .contact h6 {
+        font-size: 28px; /* Reduce font size for heading */
+        padding: 3rem 0 0 0; /* Reduce padding for better spacing on smaller screens */
+        text-align: center; /* Center-align the heading */
+    }
+
+    .contact form .btn1 {
+        width: 100%; /* Make the button full-width */
+        padding: 1rem; /* Add some padding for better touch interaction */
+        font-size: 1.6rem;
+    }
+}
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 5rem 9%;
+    background: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Same font as About Me */
+}
+
+.skills h5 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.skills-icons i {
+    font-size: 10rem;
+    color: #ff8c05; /* Main accent color for icons */
+    background: #212121;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.skills-icons i:hover {
+    color: #fff;
+    background: #ff8c05; /* Accent color on hover */
+}
+/* Contact Section Styling */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section-title-left h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"] {
+    background-color: #f8f8f8b0;
+}
+
+form textarea {
+    background-color: #f8f8f8;
+    resize: vertical;
+	height: 150px; /* Adjusted height */
+}
+
+form button {
+    background-color: #db8d34;
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #b97f29;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title-left h3 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form .row {
+        display: block;
+    }
+
+    form .col-md-6 {
+        width: 100%;
+    }
+}

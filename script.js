@@ -211,3 +211,5 @@ function generateResponse(userInput) {
         return "I'm not sure about that. Try asking about Onele's skills, experience, or projects!";
     }
 }
+
+
