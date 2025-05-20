@@ -901,3 +901,23 @@ form button:hover {
         width: 100%;
     }
 }
+.footer {
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 26px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #d47f00;
+    transform: scale(1.2);
+}
