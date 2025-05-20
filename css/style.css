@@ -393,13 +393,14 @@ ul {
         font-size: 32px;
     }
 }
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General Heading Style */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 40px; /* Adjust font size */
+    font-weight: 900; /* Set font weight */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Add space below headings */
+    color: #ff8c05; /* Set color to match your desired theme */
 }
-
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -835,7 +836,7 @@ ul li a[href*="mailto"]:hover {
 form {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff05;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -857,11 +858,11 @@ form input, form textarea {
 }
 
 form input[type="text"], form input[type="email"], form input[type="tel"] {
-    background-color: #f8f8f8b0;
+    background-color: white;
 }
 
 form textarea {
-    background-color: #f8f8f8;
+    background-color: white;
     resize: vertical;
 	height: 150px; /* Adjusted height */
 }
