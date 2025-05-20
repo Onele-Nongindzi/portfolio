@@ -22,38 +22,11 @@ body {
     line-height: 22px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h1 {
-    font-size: 48px;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 40px;
+    
 }
 
-h2 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-h4 {
-    font-size: 40px;
-}
-
-h5 {
-    font-size: 40px;
-	margin: auto
-}
-
-h6 {
-    font-size: 40px;
-	margin: auto
-	
-}
 
 a {
     color: #fff;
@@ -920,4 +893,7 @@ form button:hover {
 .social-icon:hover {
     color: #d47f00;
     transform: scale(1.2);
+}
+p {
+  font-size: 17px; /* Adjust the size as needed */
 }
