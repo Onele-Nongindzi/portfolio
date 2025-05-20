@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Onele Nongindzi's Personal Portfolio - Full Stack Developer">
+    <meta name="description" content="Onele Nongindzi's Personal Portfolio - Full Stack Developer">
 
     <link rel="icon" href="images/favicon.png">
     <title>Onele - Personal Portfolio Template</title>
@@ -14,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&amp;display=swap" rel="stylesheet">
     <!-- end font -->
 
+    <!-- External CSS links -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fakeLoader.css">
@@ -21,13 +21,16 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Owl Carousel and other external libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="path-to-your-stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- loader -->
@@ -40,12 +43,9 @@
         <!-- navbar -->
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
-
-                <!-- navbar brand or logo -->
                 <a href="#" class="navbar-brand">
                     <h2>ONELE</h2>
                 </a>
-                <!-- end navbar brand or logo -->
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,197 +59,148 @@
                         <li class="nav-item">
                             <a href="#about" class="nav-link">About</a>
                         </li>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education&experience" class="nav-link">Education & Experience</a>
-                    </li>
-					<li class="nav-item">
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-					<li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
+                        <li class="nav-item">
+                            <a href="#education&experience" class="nav-link">Education & Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <!-- end navbar -->
 
         <!-- home intro -->
-       <div class="home-intro segments">
-    <div class="container">
-        <div class="intro-content box-content">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-sm-12 col-xs-12">
-                    <div class="intro-caption">
-					
-                        <span>I am Onele Nongindzi</span>
-                        <h2>Full Stack Developer Intern @CAPACITI</h2>
-						
-                      <a href="Onele_Nongindzi_Resume.pdf" download="Onele_Nongindzi_Resume.pdf">
-    <button class="button" type="button">Download CV</button>
-</a>
-
+        <div class="home-intro segments">
+            <div class="container">
+                <div class="intro-content box-content">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <div class="intro-caption">
+                                <span>I am Onele Nongindzi</span>
+                                <h2>Aspiring Software Engineer</h2>
+                                <a href="Onele_Nongindzi_Resume.pdf" download="Onele_Nongindzi_Resume.pdf">
+                                    <button class="button" type="button">Download CV</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="intro-image">
+                                <img src="images/intro-image.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="intro-image">
-                        <img src="images/intro-image.jpg" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- About -->
+    <div id="about" class="about segments">
+        <div class="container">
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="content-left">
+                            <div class="section-title section-title-left">
+                                <h3 class="gradient-text">About Me</h3>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    I'm a Full Stack Developer Intern at CAPACITI, passionate about crafting dynamic and user-friendly web applications.
+                                </p>
+                                <p>
+                                    My expertise spans HTML, CSS, JavaScript, and backend technologies. I thrive on solving complex problems, continuously learning new technologies, and collaborating on innovative projects. Currently, I'm honing my full-stack development skills while actively contributing to real-world applications.
+                                </p>
+                                <!-- View Certificates Button -->
+                                <a href="images/1.pdf" target="_blank">
+                                    <button class="view-certificates-btn">View Certificates</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="content-right">
+                            <img src="images/about.jpg" alt="About Me" class="about-img">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-        <!-- end home intro -->
-<!-- About -->
-<div id="about" class="about segments">
-    <div class="container">
-        <div class="box-content">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="content-left">
-                        <div class="section-title section-title-left">
-<h3 class="gradient-text">About Me</h3>
-</div>
-<div class="content">
-    <p>
-        I'm a Full Stack Developer Intern at CAPACITI, passionate about crafting dynamic and user-friendly web applications.
-    </p>
-    <p>
-        My expertise spans HTML, CSS, JavaScript, and backend technologies. I thrive on solving complex problems, continuously learning new technologies, and collaborating on innovative projects.  Currently, I'm honing my full-stack development skills while actively contributing to real-world applications.
-    </p>
-<!-- View Certificates Button -->
-<a href="images/1.pdf" target="_blank">
-    <button class="view-certificates-btn">View Certificates</button>
-</a>
 
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-12 col-xs-12">
-    <div class="content-right">
-        <img src="images/about.jpg" alt="About Me" class="about-img">
-    </div>
-</div>
-</div>
-</div>
-</div>
-    <!-- end about -->
-<!-- Education, Experience & Skills -->
-<div class="about segments">
-    <div class="container">
-        <div class="box-content">
-            <div class="row" id="education&experience">
-                <!-- Left Column: Education -->
-                <div class="col-md-6 col-sm-12">
-                    <!-- Education -->
-                    <div class="content-left">
-                        <div class="section-title section-title-left">
-                            <h3>Education</h3>
+    <!-- Education, Experience & Skills -->
+    <div class="about segments">
+        <div class="container">
+            <div class="box-content">
+                <div class="row" id="education&experience">
+                    <!-- Left Column: Education -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="content-left">
+                            <div class="section-title section-title-left">
+                                <h3>Education</h3>
+                            </div>
+                            <p><strong>Walter Sisulu University</strong><br>Advanced Diploma in ICT (Application Development), 2021</p>
+                            <p><strong>Walter Sisulu University</strong><br>National Diploma in Information Technology, 2018 - 2020</p>
+                            <p><strong>National Senior Certificate</strong>, 2016</p>
                         </div>
-                        <p><strong>Walter Sisulu University</strong><br>Advanced Diploma in ICT (Application Development), 2021</p>
-                        <p><strong>Walter Sisulu University</strong><br>National Diploma in Information Technology, 2018 - 2020</p>
-                        <p><strong>National Senior Certificate</strong>, 2016</p>
                     </div>
-                </div>
 
-                <!-- Right Column: Work Experience -->
-                <div class="col-md-6 col-sm-12">
-                    <!-- Work Experience -->
-                    <div class="content-left">
-                        <div class="section-title section-title-left">
-                            <h3>Work Experience</h3>
+                    <!-- Right Column: Work Experience -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="content-left">
+                            <div class="section-title section-title-left">
+                                <h3>Work Experience</h3>
+                            </div>
+                            <p><strong>Full Stack Developer Intern - Capaciti</strong><br>2024 - Present</p>
+                            <p>• Working on front-end and back-end web development.<br>• Developing interactive UI components.<br>• Managing repositories on GitHub.</p>
                         </div>
-                        <p><strong>Full Stack Developer Intern - Capaciti</strong><br>2024 - Present</p>
-                        <p>• Working on front-end and back-end web development.<br>• Developing interactive UI components.<br>• Managing repositories on GitHub.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Technical & Soft Skills Section -->
+   <!-- Left Column: Technical Skills -->
 <section id="skills" class="skills-section segments">
     <div class="container">
         <div class="box-content">
             <div class="row">
-                <!-- Left Column: Technical Skills -->
+                <!-- Technical Skills Column (Left) -->
                 <div class="col-md-6 col-sm-12">
                     <div class="content-left">
                         <div class="section-title section-title-left">
                             <h3>Technical Skills</h3>
                         </div>
-                        <p><strong>HTML5</strong><br>Proficient in building static web pages with HTML5.</p>
-                        <p><strong>CSS3</strong><br>Experience with styling and layout using CSS3 and frameworks like Bootstrap.</p>
-                        <p><strong>JavaScript</strong><br>Developing interactive web applications with JavaScript and ES6+ features.</p>
-                        <p><strong>Java</strong><br>Experience in Java for building scalable back-end systems.</p>
+                        <div class="skills-icons">
+                            <p><i class="fab fa-html5"></i> HTML5</p>
+                            <p><i class="fab fa-css3-alt"></i> CSS3</p>
+                            <p><i class="fab fa-js"></i> Python</p>
+                            <p><i class="fab fa-java"></i> Java</p>
+                            <p><i class="fab fa-python"></i> JavaScript</p>
+                            <p><i class="fab fa-git-alt"></i> Git</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right Column: Soft Skills -->
+                <!-- Soft Skills Column (Right) -->
                 <div class="col-md-6 col-sm-12">
                     <div class="content-left">
                         <div class="section-title section-title-left">
                             <h3>Soft Skills</h3>
                         </div>
-                        <p><strong>Communication</strong><br>Effective at conveying ideas and collaborating with teams.</p>
-                        <p><strong>Teamwork</strong><br>Able to work in collaborative environments to achieve project goals.</p>
-                        <p><strong>Problem Solving</strong><br>Excellent at identifying and solving complex issues.</p>
-                        <p><strong>Time Management</strong><br>Skilled in managing multiple tasks and meeting deadlines.</p>
-                        <p><strong>Adaptability</strong><br>Quick to learn and adapt to new environments and technologies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contact Section -->
-<section id="contact" class="contact-segment segments">
-    <div class="container">
-        <div class="box-content">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="content-left">
-                        <div class="section-title section-title-left">
-                            <h3>Get In Touch</h3>
+                        <div class="skills-icons">
+                            <p><i class="fas fa-comment-dots"></i> Communication</p>
+                            <p><i class="fas fa-user-friends"></i> Teamwork</p>
+                            <p><i class="fas fa-lightbulb"></i> Problem-Solving</p>
+                            <p><i class="fas fa-hourglass-start"></i>Leadership</p>
+                            <p><i class="fas fa-recycle"></i> Adaptability</p>
+                            <p><i class="fas fa-user-tie"></i> Collaboration</p>
                         </div>
-                        <form action="https://formspree.io/f/myzklwvn" method="POST">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>
-                                        Full Name:
-                                        <input type="text" name="name" placeholder="Full Name" required>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>
-                                        Email Address:
-                                        <input type="email" name="email" placeholder="Email Address" required>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>
-                                        Mobile No:
-                                        <input type="tel" name="mobnum" placeholder="Mobile Number" required>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>
-                                        Email Subject:
-                                        <input type="text" name="subject" placeholder="Email Subject" required>
-                                    </label>
-                                </div>
-                            </div>
-                            <label>
-                                        Please Type Your Message Here:
-                                <textarea name="message" rows="1" placeholder="Your Message" required></textarea>
-                            </label>
-                            <button type="submit">Submit</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -258,75 +209,74 @@
 </section>
 
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-segment segments">
+        <div class="container">
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="content-left">
+                            <div class="section-title section-title-left">
+                                <h3>Get In Touch</h3>
+                            </div>
+                            <form action="https://formspree.io/f/myzklwvn" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            Full Name:
+                                            <input type="text" name="name" placeholder="Full Name" required>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>
+                                            Email Address:
+                                            <input type="email" name="email" placeholder="Email Address" required>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            Mobile No:
+                                            <input type="tel" name="mobnum" placeholder="Mobile Number" required>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>
+                                            Email Subject:
+                                            <input type="text" name="subject" placeholder="Email Subject" required>
+                                        </label>
+                                    </div>
+                                </div>
+                                <label>
+                                    Please Type Your Message Here:
+                                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                                </label>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
-    <!-- Social Icons Below Form -->
-    <div class="social-icons">
-        <ul class="social-links" style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0;">
-            <li>
-                <a href="https://www.facebook.com/OneleNongindzi" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:onelenongindzi@gmail.com" aria-label="Email">
-                    <i class="fab fa-google"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/onele-nongindzi-a27683321" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a href="tel:+27783056329" aria-label="Phone">
-                    <i class="fas fa-phone-alt"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Onele Nongindzi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Chatbox Button -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Chatbox</title>
-</head>
-<body>
-
- <!-- Chatbox Button -->
-<button id="chat-button" onclick="toggleChat()">Chat</button>
-
-<!-- Chatbox -->
-<div id="chatbox" class="chatbox">
-    <div class="chat-header">
-        <span>Chat with me!</span>
-        <button class="close-btn" onclick="toggleChat()">X</button>
-    </div>
-    <div class="chat-messages" id="chat-messages">
-        <!-- Chat messages will appear here -->
-    </div>
-    <input type="text" id="chat-input" class="chat-input" placeholder="Type your message...">
-    <button onclick="sendMessage()">Send</button>
-</div>
-</body>
-</html>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/fakeLoader.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.filterizr.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/contact-form.js"></script>
+    <!-- External JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/fakeLoader.js"></script>
     <script src="js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script src="script.js"></script>
-	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-</body>
 
+</body>
 </html>

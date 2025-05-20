@@ -143,18 +143,26 @@ ul {
 }
 /*navbar*/
 .navbar {
-    margin: 27px 0;
+    margin: 0;
     background: #262626;
     color: #fff;
     padding: 8px 40px;
     transition: all .5s ease;
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0; /* Position it at the top */
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensure it stays on top of other elements */
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
 }
+
 .navbar .navbar-brand h2 {
     font-weight: 900;
     background: -webkit-linear-gradient(right, #d61a5e, #ff8c05);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .navbar .navbar-nav .nav-item .nav-link {
     color: #fff;
     font-weight: 500;
@@ -163,6 +171,7 @@ ul {
     padding-right: 12px;
     transition: all .4s ease;
 }
+
 .navbar.fix {
     position: fixed;
     top: 0;
@@ -174,7 +183,6 @@ ul {
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
     transition: all .5s ease;
 }
-
 /*home intro*/
 .home-intro .intro-content {
     position: relative;
@@ -722,59 +730,8 @@ ul li a[href*="mailto"]:hover {
     transform: scale(1.05); /* Slightly increase size */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
-/* Skills Section */
-.skills {
-    text-align: right; /* Aligns the h5 title to the right */
-    padding: 5rem 9%; /* Adjust padding for spacing */
-    background: #212121;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: center; /* Center the icons vertically */
-    align-items: center; /* Center the content horizontally */
-    min-height: 100vh; /* Ensure the section takes up the full viewport height */
-	/*height: 100px;*/
-    margin-top: 300px;
-}
- 
-.skills h5 {
-    font-size: 5rem;
-    margin-bottom: 3rem; /* Space between title and icons */
-    color: linear-gradient(to right, #d61a5e, #ff8c05)
-    text-align: center; /* Title is centered */
-}
- 
-.skills-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items in the center vertically */
-    flex-wrap: wrap; /* Allows icons to wrap if space is too tight */
-    gap: 3rem; /* Increased gap for more spacing between icons */
-}
- 
-.skills-icons i {
-    font-size: 5rem 9%; /* Increased icon size */
-    color: var(--main-color); /* Main color remains consistent */
-    background: #212121;    /* Darker background for icons */
-    padding: 2.5rem; /* Increased padding for larger icons */
-    border-radius: 1rem;
-    transition: 0.3s;
-}
- 
-.skills-icons i:hover {
-    color: #fff;
-    background: var(--main-color); /* Maintained hover effect */
-	@media (max-width: 768px) {
-    .skills h5 {
-        text-align: center; /* Center the title on smaller screens */
-    }
 
-    .skill-item {
-        width: 80px; /* Reduce the size of the skill items for smaller screens */
-    }
 
-    .skill-item i {
-        font-size: 30px; /* Adjust icon size for smaller screens */
-    }
 @media screen and (max-width: 768px) {
     .contact form {
         padding: 1.5rem; /* Add some padding to the form container */
@@ -820,33 +777,52 @@ ul li a[href*="mailto"]:hover {
     font-size: 50px;
     font-weight: 900;
     margin-bottom: 30px;
+}
 
 .skills-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3rem; /* Adjusted gap between icons */
+    max-width: 900px;  /* Set a max width to ensure the layout doesn't stretch too much */
+    margin: 0 auto;
+}
+
+.skills-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .skills-icons i {
-    font-size: 10rem;
-    color: #ff8c05; /* Main accent color for icons */
+    font-size: 3rem;  /* Icon size */
+    color: #ff8c05;   /* Main accent color for icons */
     background: #212121;
-    padding: 2.5rem;
+    padding: 1.5rem;  /* Padding for smaller icons */
     border-radius: 1rem;
     transition: 0.3s;
+    margin: 0.5rem; /* Margin to add spacing between individual icons */
 }
 
 .skills-icons i:hover {
     color: #fff;
     background: #ff8c05; /* Accent color on hover */
 }
+
 /* Contact Section Styling */
 #contact {
     background-color: #f9f9f9;
     padding: 50px 0;
 }
+
+/* Contact Section Styling */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
 
 .section-title-left h3 {
     font-size: 30px;
