@@ -228,7 +228,7 @@ ul {
     transition: all .2s ease;
 }
 .contact .content-left ul li:hover a i {
-    color: #ffffff;
+    color: #ffffff05;
 }
 .contact .content-left ul li:last-child {
     margin-right: 0;
@@ -241,11 +241,11 @@ ul {
 }
 .contact .content-right .row .form-control {
     border: 0;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff05;
     border-radius: 0;
     background: transparent;
     padding: 0;
-    color: #fff;
+    color: #ffffff05;
 }
 .contact .content-right .row .form-control:hover {
     border-color: #ff8c05;
@@ -383,43 +383,6 @@ button {
     cursor: pointer;
 }
 
-/* Chatbox Button */
-#chat-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #ff8c05;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-button:active {
-    transform: scale(0.98);
-}
-
-/* User messages */
-.user-message {
-    background-color: hsl(29, 100%, 50%);
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 5px 0;
-    text-align: right;
-}
-
-/* Bot messages */
-.bot-message {
-    background-color: #f1f1f1;
-    color: black;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 5px 0;
-    text-align: left;
-}
-
-
 /* Social Media Links */
 ul {
     list-style-type: none;
@@ -501,59 +464,6 @@ ul li a {
     color: #007bff; /* Adjust the color */
     margin-right: 10px;
     font-size: 1.3em;
-}
-
-/* Progress bar container */
-.progress {
-    background-color: #e0e0e0;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 10px;
-    width: 100%;
-}
-
-/* Progress bar itself */
-.progress-bar {
-    background-color: #ff8c05;  /* Set the desired progress bar color */
-    height: 100%;
-    color: white;
-    text-align: center;
-    line-height: 10px;  /* Vertically align the percentage text */
-    font-size: 0.9em;  /* Adjust font size inside the progress bar */
-    border-radius: 20px;
-}
-
-/* LinkedIn and Phone Number - Custom Styling */
-ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #007bff; /* Change link color */
-    font-weight: 600; /* Make the link bold */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-/* Hover Effect */
-ul li a:hover {
-    color: #0056b3; /* Darker shade on hover */
-    text-decoration: underline; /* Add underline on hover */
-}
-
-/* Add Icons next to LinkedIn and Phone Number */
-ul li a i {
-    margin-right: 8px; /* Space between icon and text */
-    font-size: 1.2em; /* Increase icon size */
-}
-
-/* Optional: Style for Phone Number Links (e.g., Tel Links) */
-/* Phone Number - Custom Styling */
-ul li a.phone-number {
-    color: white; /* Make phone number text white */
-    font-weight: 600; /* Make the text bold */
-    font-size: 0.9em; /* Make the font smaller */
-    white-space: nowrap; /* Prevent the number from breaking into multiple lines */
-}
-
-ul li a.phone-number:hover {
-    color: #882177f3; /* Dark green on hover */
 }
 
 /* Styling for Social Media Links */
@@ -934,6 +844,7 @@ p {
     color: #fafafa;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
     .project-grid-2x2 {
@@ -963,4 +874,10 @@ p {
   background-color: #ff8a05a9;
   color: #fff;
   border-color: #ff8c05a9;
+}
+html {
+  scroll-behavior: smooth;
+}
+.row {
+  row-gap: 30px;
 }
