@@ -13,7 +13,20 @@ $(function() {
         bgColor: "#212121" //Hex, RGB or RGBA colors
 
     });
-       
+       const backToTopBtn = document.getElementById('backToTopBtn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
     // smooth scroll
     $("a").on("click", function(event) {
 
@@ -84,11 +97,16 @@ $(function() {
 
 
 });
-window.addEventListener("scroll", function () {
-    let navbar = document.querySelector(".navbar");  
-    if (window.scrollY > 50) {  // Adjust the scroll value as needed
-        navbar.classList.add("fix");
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
     } else {
-        navbar.classList.remove("fix");
+        backToTopBtn.style.display = 'none';
     }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

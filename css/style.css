@@ -897,3 +897,70 @@ form button:hover {
 p {
   font-size: 17px; /* Adjust the size as needed */
 }
+/* Project Section */
+.project-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.project-card {
+    background-color: #262626;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    color: #fff;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white
+    ;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #fafafa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+}
+/* Solid button (primary) */
+.btn-primary {
+  background-color: #ff8a05a9;
+  border-color: #ff8a05a9;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #ff8a05a9;
+  border-color: #ff8a05a9;
+  color: #fff;
+}
+
+/* Outline button */
+.btn-outline-primary {
+  color: #ff8a05a9;
+  border-color: #ff8c05a9;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff8a05a9;
+  color: #fff;
+  border-color: #ff8c05a9;
+}
