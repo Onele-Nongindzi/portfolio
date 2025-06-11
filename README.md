@@ -27,7 +27,7 @@ Check out the live version of my portfolio here:
 
 ## Screenshot
 
-![Portfolio Screenshot](images/portfolio-screenshot(19).png)  
+![Portfolio Screenshot](images/Screenshot%20(19).png)  
 *Screenshot of the homepage of my portfolio*
 
 ---
