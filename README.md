@@ -6,6 +6,8 @@ Welcome to my personal portfolio! This website is a digital showcase of my skill
 
 ## Table of Contents
 
+- [Live Demo](#live-demo)  
+- [Screenshot](#screenshot)  
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
@@ -13,6 +15,20 @@ Welcome to my personal portfolio! This website is a digital showcase of my skill
 - [Project Structure](#project-structure)  
 - [Contributing](#contributing)  
 - [Contact](#contact)  
+
+---
+
+## Live Demo
+
+Check out the live version of my portfolio here:  
+[https://onele-nongindzi.github.io/portfolio](https://onele-nongindzi.github.io/portfolio)
+
+---
+
+## Screenshot
+
+![Portfolio Screenshot](images/portfolio-screenshot.png)  
+*Screenshot of the homepage of my portfolio*
 
 ---
 
@@ -42,10 +58,3 @@ To run this portfolio locally, follow these steps:
 ```bash
 git clone https://github.com/Onele-Nongindzi/portfolio.git
 cd portfolio
-
-
-GitHub: Onele-Nongindzi
-
-LinkedIn: www.linkedin.com/in/onele-nongindzi-a27683321
-
-Thank you for visiting my portfolio!
