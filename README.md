@@ -1,86 +1,48 @@
-Welcome to my personal portfolio! This website serves as a digital representation of my skills, education, and experience as a developer. It showcases my journey, projects, and the technologies I work with.
+# Personal Portfolio
 
-Table of Contents
+Welcome to my personal portfolio! This website is a digital showcase of my skills, education, and experience as a developer. It highlights my journey, projects, and the technologies I work with.
 
-Features
+---
 
-Technologies Used
+## Table of Contents
 
-Installation
+- [Features](#features)  
+- [Technologies Used](#technologies-used)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Project Structure](#project-structure)  
+- [Contributing](#contributing)  
+- [Contact](#contact)  
 
-Usage
+---
 
-Project Structure
+## Features
 
-Contributing
+- **Clean and Responsive Design** — Optimized for an excellent viewing experience across all devices.  
+- **About Me Section** — Insight into my background, skills, and interests.  
+- **Work & Education** — Overview of my professional journey and academic achievements.  
+- **Skills Showcase** — Highlights both my technical and soft skills.  
+- **Contact Form** — Allows visitors to get in touch with me directly.  
+- **GitHub Hosting** — The portfolio is hosted on GitHub Pages for easy access.  
 
-Contact
+---
 
-Features
+## Technologies Used
 
-Clean and Responsive Design – Ensures an optimal viewing experience across different devices.
+- **HTML** — For structuring the website content.  
+- **CSS** — For styling and creating an appealing design.  
+- **JavaScript** — To add interactive functionality.  
 
-About Me Section – Provides insight into my background, skills, and interests.
+---
 
-Work & Education – Displays my professional journey and educational achievements.
-
-Skills Showcase – Highlights my technical and soft skills.
-
-Contact Form – Allows visitors to get in touch with me directly.
-
-GitHub Hosting – The portfolio is hosted on GitHub Pages for easy access.
-
-Technologies Used
-
-HTML – For structuring the content of the website.
-
-CSS – For styling and making the website visually appealing.
-
-JavaScript – For adding interactive elements and functionality.
-
-Installation
+## Installation
 
 To run this portfolio locally, follow these steps:
 
-Clone the repository:
-
+```bash
 git clone https://github.com/Onele-Nongindzi/portfolio.git
-
-Navigate to the project directory:
-
 cd portfolio
 
-Open the index.html file in a browser to view the portfolio.
-
-Usage
-
-Explore different sections to learn about my background, skills, and projects.
-
-Use the contact form to reach out to me.
-
-View the source code to understand the implementation.
-
-Project Structure
-
-portfolio/
-│── css/            # Stylesheets
-│── fonts/          # Custom fonts
-│── images/         # Portfolio images
-│── js/             # JavaScript files
-│── index.html      # Main HTML file
-│── script.js       # JavaScript for interactivity
-│── README.md       # Project documentation
-│── Onele_Nongindzi_Resume.pdf  # Resume file
-
-Contributing
-
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-
-Contact
-
-Name: Onele Nongindzi
-
-Email: onelenongindzi@gmail.com
 
 GitHub: Onele-Nongindzi
 
