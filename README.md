@@ -11,10 +11,6 @@ Welcome to my personal portfolio! This website is a digital showcase of my skill
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Contributing](#contributing)  
-- [Contact](#contact)  
 
 ---
 
