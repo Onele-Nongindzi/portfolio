@@ -6,12 +6,8 @@ general
 button
 navbar
 home intro
-about resume
-portfolio
-blog
 contact
 footer
-comment
 ---------*/
 /*general*/
 body {
@@ -157,8 +153,8 @@ ul {
     transition: all .5s ease;
 }
 /*home intro*/
-.home-intro .intro-content {
-    position: relative;
+.home-intro {
+    padding-top: 120px;
 }
 .home-intro .intro-content .intro-caption {
     position: absolute;
@@ -204,12 +200,26 @@ ul {
     font-weight: 900;
     margin-bottom: 30px;
 }
+/* Parent container */
+.about .row {
+    display: flex;
+    align-items: stretch; /* Makes both columns equal height */
+}
+
+/* Left content */
+.about .content-left {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Right image container */
 .about .content-right {
+    flex: 1;
     background: url(../images/about.jpg);
     background-size: cover;
-    background-position: center center;  /* Focuses on the center of the image */
-    min-height: 55vh;  /* Reduced to 50% of the viewport height */
-    border-radius: 0 10px 10px 0;  /* Slightly more rounded corners */
+    background-position: center center;
+    border-radius: 0 10px 10px 0;
+    min-height: 450px; /* Ensures minimum height */
 }
 
 
