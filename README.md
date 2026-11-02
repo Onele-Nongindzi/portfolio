@@ -1,56 +1,35 @@
-# Personal Portfolio
+# Onele Nongindzi: Portfolio
 
-Welcome to my personal portfolio! This website is a digital showcase of my skills, education, and experience as a developer. It highlights my journey, projects, and the technologies I work with.
+Personal portfolio site. Plain HTML, CSS and JavaScript, with no build step.
 
----
+## Files
 
-## Table of Contents
+```
+index.html       Page structure (you rarely need to touch this)
+css/style.css    All styling. Colours and fonts are set once at the top in :root
+js/content.js    ALL THE TEXT: about, projects, experience, skills, education, contact
+js/main.js       Builds the page from content.js and runs the demo card
+```
 
-- [Live Demo](#live-demo)  
-- [Screenshot](#screenshot)  
-- [Features](#features)  
-- [Technologies Used](#technologies-used)  
-- [Installation](#installation)  
+## Editing
 
----
+- **Change any text:** edit `js/content.js`, save, and refresh the browser.
+- **Add a project or job:** copy an existing `{ ... }` block in `projects` or `experience`, paste it below, and change the values. Keep the comma between blocks.
+- **Remove something:** delete its `{ ... },` block.
+- **Change colours or fonts:** edit the variables at the top of `css/style.css` (`--accent`, `--bg`, `--display` and so on). Dark-mode colours are in the two blocks just below them.
 
-## Live Demo
+## Preview
 
-Check out the live version of my portfolio here:  
-[https://onele-nongindzi.github.io/portfolio](https://onele-nongindzi.github.io/portfolio)
+Open `index.html` in a browser, or use the VS Code **Live Server** extension so it reloads automatically when you save.
 
----
+## Publish on GitHub Pages
 
-## Screenshot
-
-![Portfolio Screenshot](images/Screenshot%20(19).png)  
-*Screenshot of the homepage of my portfolio*
-
----
-
-## Features
-
-- **Clean and Responsive Design** — Optimized for an excellent viewing experience across all devices.  
-- **About Me Section** — Insight into my background, skills, and interests.  
-- **Work & Education** — Overview of my professional journey and academic achievements.  
-- **Skills Showcase** — Highlights both my technical and soft skills.  
-- **Contact Form** — Allows visitors to get in touch with me directly.  
-- **GitHub Hosting** — The portfolio is hosted on GitHub Pages for easy access.  
-
----
-
-## Technologies Used
-
-- **HTML** — For structuring the website content.  
-- **CSS** — For styling and creating an appealing design.  
-- **JavaScript** — To add interactive functionality.  
-
----
-
-## Installation
-
-To run this portfolio locally, follow these steps:
+Copy these files into your `portfolio` repo, replacing the old ones, then run:
 
 ```bash
-git clone https://github.com/Onele-Nongindzi/portfolio.git
-cd portfolio
+git add -A
+git commit -m "Update portfolio"
+git push
+```
+
+The site updates at https://onele-nongindzi.github.io/portfolio/ within about a minute.
